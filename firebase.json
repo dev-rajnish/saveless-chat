@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "noschat",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

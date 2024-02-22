@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dim" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="pwa/manifest.json">
+  <title>SaveLess Chat</title>
+</head>
+<body>
+  <!--NAVBAR-->
+  <div class="drawer">
+    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
+    <div class="drawer-content flex flex-col">
+      <!-- Navbar -->
+      <div class="w-full navbar bg-base-300">
+        <div class="flex-none lg:hidden">
+          <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+              </path>
+            </svg>
+          </label>
+        </div> 
+        <div class="flex-1 px-2 mx-2">SaveLess Chat</div>
+        <div class="flex-none hidden lg:block">
+          <ul class="menu menu-horizontal">
+            <!-- Navbar menu content here -->
+            <li><a>Themes</a></li>
+            <li><a>More...</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+    <div class="drawer-side">
+      <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label> 
+      <ul class="menu p-4 w-80 min-h-full bg-base-200">
+        <!-- Sidebar content here -->
+        <li><a>Themes</a></li>
+        <li><a>More...</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--navbar /-->
+
+<!--Main Body-->
+<div class="flex justify-center items-center mt-64">
+<div class="join">
+  <div >
+    <button class="btn join-item pl-2 pr-2 bg-red-50 bg-slate-500" >
+      <span class="text-gray-700 text-xl px-0 mx-0 text-slate-100">+</span>
+      <span class="text-gray-700 text-2xl pl-0 -ml-2 text-slate-100">91</span>
+    </button>
+  </div>
+  <div>
+    <div>
+      <input placeholder="10 Digit phoneNumber" id="phoneNumber" class=" text-xl text-gray-950 input input-bordered join-item focus:outline-none pl-4 pt-1 focus:border-grey-400 bg-red-50" />
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="flex justify-center items-center mt-3">
+
+<button onclick="openWhatsAppChat()" class="btn btn- w-max mt-3 brightness-105 btn-primary text-2xl  "  type="submit">
+    Whatsapp
+  </button>
+<!--Main Body /-->
+
+ 
+
+  <!--Script-->
+  <script src="main.js"></script>
+
+
+  <script>
+    if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/pwa/sw.js')
+      .then(registration => {
+        console.log('Service Worker registered with scope:', registration.scope);
+      })
+      .catch(error => {
+        console.error('Service Worker registration failed:', error);
+      });
+  });
+}
+  </script>
+
+</body>
+</html>
