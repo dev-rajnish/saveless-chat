@@ -4347,6 +4347,10 @@ html:has(.drawer-toggle:checked) {
   width: max-content;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -4460,6 +4464,22 @@ html:has(.drawer-toggle:checked) {
   text-transform: uppercase;
 }
 
+.leading-10 {
+  line-height: 2.5rem;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
+.-tracking-wider {
+  letter-spacing: -0.05em;
+}
+
 .text-green-50 {
   --tw-text-opacity: 1;
   color: rgb(240 253 244 / var(--tw-text-opacity));
@@ -4475,9 +4495,45 @@ html:has(.drawer-toggle:checked) {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.focus\:border:focus {
+  border-width: 1px;
+}
+
+.focus\:border-indigo-400:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(129 140 248 / var(--tw-border-opacity));
+}
+
+.focus\:font-semibold:focus {
+  font-weight: 600;
+}
+
+.focus\:font-normal:focus {
+  font-weight: 400;
+}
+
+.focus\:leading-10:focus {
+  line-height: 2.5rem;
+}
+
+.focus\:tracking-wider:focus {
+  letter-spacing: 0.05em;
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.focus\:ring:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.focus\:ring-indigo-400:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(129 140 248 / var(--tw-ring-opacity));
 }
 
 @media (min-width: 640px) {
