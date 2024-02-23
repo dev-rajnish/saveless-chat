@@ -18,3 +18,7 @@
       alert('Please enter a valid 10-digit phone number Only.');
     }
   }
+function toggleTheme(){
+  const phoneNumber = document.getElementsByClassName('theme-controller').value.trim();
+  console.log("themeChanged");
+}
