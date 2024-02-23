@@ -1,7 +1,6 @@
 {
   "hosting": {
     "site": "noschat",
-    "site": "r9",
     "public": "public",
     "ignore": [
       "firebase.json",
